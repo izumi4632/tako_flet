@@ -1,8 +1,6 @@
 import flet as ft
 from random import *
-from string import ascii_lowercase, ascii_uppercase
 
-rand_seed = seed(0)
 # caseFile = open("input.txt", "w")
 
 
