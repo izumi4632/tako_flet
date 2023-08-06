@@ -1,0 +1,43 @@
+{
+    "rust-analyzer.linkedProjects": ["src_r\\Cargo.toml"],
+
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "none",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true
+    },
+    "java.format.enabled": true,
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java",
+        "editor.tabSize": 4,
+        "editor.formatOnSave": true,
+        "editor.insertSpaces": false,
+        "editor.detectIndentation": false
+    },
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    },
+    "cSpell.words": [
+        "appendleft",
+        "Lcode",
+        "popleft",
+        "pyperclip",
+        "setrecursionlimit"
+    ],
+    "java.debug.settings.onBuildFailureProceed": true,
+    "redhat.telemetry.enabled": true,
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "java.format.settings.url": ".vscode/java-formatter.xml",
+    "editor.parameterHints.cycle": false,
+    "editor.parameterHints.enabled": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.tabSize": 4
+    },
+    "rust-analyzer.showUnlinkedFileNotification": false,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    }
+}
