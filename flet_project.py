@@ -175,9 +175,9 @@ def main(page: ft.Page):
 
     # 対応している引数の情報
     name_arg = {
-        "ランダム数値"        : "name min max",
-        "ランダム数列"        : "name min max length",
-        "順列の並べ替え"      : "name min max",
+        "ランダム数値"      : "name min max",
+        "ランダム数列"      : "name min max length",
+        "順列の並べ替え"   : "name min max",
         "重複なしランダム数列": "name min max length",
     }
 
@@ -230,4 +230,5 @@ def main(page: ft.Page):
     page.add(addMenu, option)
 
 
-ft.app(target=main)
+if __name__ == "__main__":
+    ft.app(target=main)
