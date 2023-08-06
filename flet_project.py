@@ -1,7 +1,6 @@
 import flet as ft
 from random import *
 
-rand_seed = seed(0)
 # caseFile = open("input.txt", "w")
 
 
