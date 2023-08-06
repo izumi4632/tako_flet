@@ -1,6 +1,7 @@
 import flet as ft
 from random import *
 
+
 # caseFile = open("input.txt", "w")
 
 
@@ -73,6 +74,8 @@ class UniRandNumArray:
 
 # データ生成
 caseData = []
+
+
 # caseData.append([N, K])
 # caseData.append([K])
 
@@ -172,9 +175,9 @@ def main(page: ft.Page):
 
     # 対応している引数の情報
     name_arg = {
-        "ランダム数値": "name min max",
-        "ランダム数列": "name min max length",
-        "順列の並べ替え": "name min max",
+        "ランダム数値"        : "name min max",
+        "ランダム数列"        : "name min max length",
+        "順列の並べ替え"      : "name min max",
         "重複なしランダム数列": "name min max length",
     }
 
