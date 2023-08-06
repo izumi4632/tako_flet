@@ -1,108 +1,19 @@
 import flet as ft
-from random import *
+from structs import RandNum, RandNumArray, PermOfRandRange, UniRandNumArray
+from file_writer import FileWriter
 
 
-# caseFile = open("input.txt", "w")
-
-
-# 変数テンプレート
-class RandNum:
-    """
-    start と end (両方含む) の間のランダムな整数を生成するクラス。
-
-    Attributes:
-    start (int): ランダム整数の下限。
-    end (int): ランダム整数の上限。
-
-    Returns:
-    int: start と end (両方含む) の間のランダムな整数。
-    """
-
-    def __init__(self, start, end) -> int:
-        self.res = randint(start, end)
-
-
-class RandNumArray:
-    """
-    start と end (両方含む) の間のランダムな整数の配列を生成するクラス。
-
-    Attributes:
-    start (int): ランダム整数の下限。
-    end (int): ランダム整数の上限。
-    length (int): 配列の長さ。
-
-    Returns:
-    list: start と end (両方含む) の間のランダムな整数の配列。
-    """
-
-    def __init__(self, start, end, length) -> list:
-        self.res = [RandNum(start, end).res for _ in range(length)]
-
-
-class PermOfRandRange:
-    """
-    start と end (両方含む) の間の整数のランダムな順列を生成するクラス。
-
-    Attributes:
-    start (int): 整数の下限。
-    end (int): 整数の上限。
-
-    Returns:
-    list: start と end (両方含む) の間の整数のランダムな順列。
-    """
-
-    def __init__(self, start, end) -> list:
-        self.res = sample(list(range(start, end + 1)), end + 1 - start)
-
-
-class UniRandNumArray:
-    """
-    start と end (endは含まない) の間のユニークなランダムな整数の配列を生成するクラス。
-
-    Attributes:
-    start (int): ランダム整数の下限。
-    end (int): ランダム整数の上限。
-    length (int): 配列の長さ。
-
-    Returns:
-    list: start と end (endは含まない) の間のユニークなランダムな整数の配列。
-    """
-
-    def __init__(self, start, end, length) -> list:
-        self.res = sample(list(range(start, end)), length)
-
-
-# データ生成
-caseData = []
-
-
-# caseData.append([N, K])
-# caseData.append([K])
-
-
-# ファイルに書き込み
-# for dataList in caseData:
-#     data = []
-#     for i in dataList:
-#         if type(i) == list:
-#             data.append(" ".join(map(str, i)))
-#         else:
-#             data.append(str(i))
-#     caseFile.write(" ".join(data) + "\n")
-
-
-# caseFile.close()
+def output():
+    caseData = []
+    writer = FileWriter("input.txt")
+    writer.write(caseData)
 
 
 def main(page: ft.Page):
     """
     変数を追加し、表示するGUIを作成するメイン関数。
-
-    引数:
-    page (ft.Page): GUIを表すページオブジェクト。
-
-    Returns:
-    なし
+    Attributes: page (ft.Page): GUIを表すページオブジェクト。
+    Returns   : なし
     """
 
     # 変数を並べるグリッド
