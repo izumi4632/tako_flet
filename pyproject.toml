@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "tako-flet"
+version = "0.1.0"
+description = ""
+authors = ["たこくん"]
+readme = "README.md"
+packages = [{include = "tako_flet"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
