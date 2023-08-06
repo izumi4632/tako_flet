@@ -1,5 +1,5 @@
 # 説明
-![img.png](img.png)
+![img.png](設計図/img.png)
 
 # 使い方
 
